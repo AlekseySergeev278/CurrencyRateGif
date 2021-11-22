@@ -12,6 +12,13 @@ public class JsonService {
 
     AppConfig appConfig = new AppConfig();
 
+
+    /**
+     * This method sends GET request to openexchangerates API and return json with data
+     * @param date - date for which you need to check the exchange rate
+     * @return JsonNode object with data
+     * @throws JsonProcessingException
+     */
     public JsonNode getJsonCurrencyRate(String date) throws JsonProcessingException {
         Openexchangerates openexchangerates = Feign.builder().target(Openexchangerates.class, appConfig.getOpenexchangeratesURL());
         ObjectMapper objectMapper = new ObjectMapper();
@@ -21,6 +28,12 @@ public class JsonService {
         return jsonNode;
     }
 
+    /**
+     * This method sends GET request to giphy API and return json with data
+     * @param pattern the pattern on which it depends a gif
+     * @return JsonNode object with data
+     * @throws JsonProcessingException
+     */
     public JsonNode getJsonGif(String pattern) throws JsonProcessingException {
         appConfig.getQueryMapGiphy().put("tag", pattern);
 

@@ -2,6 +2,10 @@ package com.example.CurrencyRateGif.models;
 
 import java.util.Objects;
 
+/**
+ * This class represents an object with currency rate
+ */
+
 public class CurrencyRate {
     private String currency;
     private String date;

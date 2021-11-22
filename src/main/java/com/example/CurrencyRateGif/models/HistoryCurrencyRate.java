@@ -1,5 +1,9 @@
 package com.example.CurrencyRateGif.models;
 
+/**
+ * This class represents an object with rate with special currency for the last two days
+ */
+
 public class HistoryCurrencyRate {
     private CurrencyRate yesterdayCurrencyRate;
     private CurrencyRate todayCurrencyRate;

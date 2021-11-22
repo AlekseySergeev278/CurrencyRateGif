@@ -2,6 +2,10 @@ package com.example.CurrencyRateGif.models;
 
 import java.util.Objects;
 
+/**
+ * This class represents a Gif object
+ */
+
 public class Gif {
 
     private String pattern;

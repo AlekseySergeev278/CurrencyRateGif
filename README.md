@@ -1,4 +1,7 @@
-This application uses a port 8080.
+This application checks currency rate for two days and shows a gif images. It depends
+from the difference of the rate. 
+
+The app uses a port 8080.
 
 You can run the app and look at that in your browser at localhost:8080 
 Then you should write the name of the currency you want to see the difference.
